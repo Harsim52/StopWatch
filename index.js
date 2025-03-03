@@ -20,7 +20,7 @@ updateDisplay()
 
 btns.addEventListener("click", (event) => {
 
-  if (event.target.textContent == "Start") {
+  if (event.target.textContent == "START") {
     if(!watch){
     watch = setInterval(() => {
       ms++;
@@ -36,10 +36,10 @@ btns.addEventListener("click", (event) => {
       }
       updateDisplay();
     }, 10)};
-  } else if (event.target.textContent == "Stop") {
+  } else if (event.target.textContent == "STOP") {
     clearInterval(watch);
     watch = null;
-  } else if (event.target.textContent == "Reset") {
+  } else if (event.target.textContent == "RESET") {
     ms = 0;
     sec = 0;
     min = 0;
